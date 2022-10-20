@@ -7,6 +7,11 @@ Requires Fleet to be installed.
 First:  
 Check if `fleetInstallDir` in _app/build.gradle.kts_ is correct.
 
+Note:  
+Will only work on Linux.  
+Tested on Arch Linux with liberica-jdk-17-full.
+
+
 Build:
 
 ```bash
@@ -16,5 +21,5 @@ Build:
 Run:
 
 ```bash
-./gradlew clean build
+./gradlew run
 ```
