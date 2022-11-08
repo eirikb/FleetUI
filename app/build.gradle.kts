@@ -15,7 +15,14 @@ val version = "0.7.9"
 val target = "linux-x64"
 
 // Set this to actual location of Fleet. YMMV
-val fleetInstallDir = "${System.getProperty("user.home")}/.local/share/JetBrains/Toolbox/apps/Fleet/ch-0/1.9.237"
+val fleetInstallDir = "${System.getProperty("user.home")}/.local/share/JetBrains/Toolbox/apps/Fleet/ch-0/1.10.192"
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 
 dependencies {
     // This is added manually, hopefully it will override any skikio in fleet-folder
