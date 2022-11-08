@@ -98,7 +98,7 @@ fun main() {
     }
 
     println("Starting...")
-    eventLoop(windowManager, eventHandlerRegistry::runHandlers, eventHandlerRegistry) {
+    eventLoop(windowManager, eventHandlerRegistry::runHandlers, Dispatchers.Default + eventHandlerRegistry) {
         println("Never reached")
         withRenderLoop(
             root = {
