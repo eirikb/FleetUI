@@ -1,14 +1,12 @@
 package flowui
 
-import fleet.frontend.FleetFrontendSettingsKeys
-import fleet.frontend.keymap.KeymapSource
-import fleet.frontend.keymap.keymap
-import fleet.plugins.keymap.frontend.parseKeymap
-import fleet.preferences.FleetPaths
-import fleet.themes.DEFAULT_THEME
+import fleet.dock.api.ThemeId
+import fleet.themes.FleetTheme
+import fleet.themes.ThemeLoader
 import fleet.themes.loadNoriaTheme
 import fleet.util.openmap.MutableOpenMap
 import fleet.util.openmap.OpenMap
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.awaitCancellation
 import noria.*
 import noria.model.*
@@ -32,7 +30,7 @@ import noria.windowManagement.impl.skiko.AwtSkikoWindowManager
 import org.jetbrains.skia.FontMgr
 import org.jetbrains.skia.paragraph.FontCollection
 import org.jetbrains.skia.paragraph.TypefaceFontProvider
-import kotlin.io.path.readText
+import java.nio.file.Path
 
 fun registerFonts() {
     val fontProvider = TypefaceFontProvider()
@@ -40,16 +38,18 @@ fun registerFonts() {
 }
 
 fun NoriaContext.mainWindow() {
-    val theme = DEFAULT_THEME.loadNoriaTheme()
+    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("/home/eirikb/dev/eirikb/FlowUI/light.json")))
+//DEFAULT_THEME.loadNoriaTheme()
     val dndRootState: StateCell<DnDRoot> = state { DnDRoot.Idle }
-    val keymapText =
-        FleetPaths.Frontend.keymapDirectory.resolve("${FleetFrontendSettingsKeys.keymap.defaultValue}.json").readText()
-    val shortcuts = parseKeymap(keymapText, KeymapSource.DEFAULT).map { it.binding }
-    val keymap = keymap(shortcuts).mapValues { (_, keyBindings) -> keyBindings.map { it.trigger }.toSet() }
+    //val keymapText =
+    //FleetPaths.Frontend.keymapDirectory.resolve("${FleetFrontendSettingsKeys.keymap.defaultValue}.json").readText()
+    //val shortcuts = parseKeymap(keymapText, KeymapSource.DEFAULT).map { it.binding }
+    //val keymap = keymap(shortcuts).mapValues { (_, keyBindings) -> keyBindings.map { it.trigger }.toSet() }
     val actionManager = DefaultActionManager()
     val portalNetwork = remember { MutableOpenMap.empty<PortalNetwork>() }
     cell(OpenMap {
-        set(BindingThemeKey, theme)
+        set(BindingThemeKey, theme.loadNoriaTheme())
+        set(AnalyticsKey, NoopAnalytics)
         set(ActionManagerKey, actionManager)
         set(DnDKey, dndRootState)
         set(PortalNetworkKey, portalNetwork)
@@ -59,7 +59,7 @@ fun NoriaContext.mainWindow() {
             initialSize = Size(800.px, 600.px),
             initialPosition = null,
             initialScreenId = null,
-            keymap = keymap
+            //keymap = keymap
         ) {
             focusData {
                 inputHandler { event ->
