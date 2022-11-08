@@ -46,7 +46,13 @@ application {
         "--add-opens", "java.base/java.util=ALL-UNNAMED",
         "--add-exports", "java.desktop/sun.java2d=ALL-UNNAMED",
         "--add-exports", "java.desktop/sun.awt=ALL-UNNAMED",
-        "--add-opens", "java.desktop/sun.awt.X11=ALL-UNNAMED"
+        "--add-opens", "java.desktop/sun.awt.X11=ALL-UNNAMED",
+        "-Dkotlinx.coroutines.debug.enable.creation.stack.trace=false",
+        "-ea",
+        "-Dnoria.render.mode=skiko",
+        "-Dskiko.collect.stat=true",
+        "-Dsun.java2d.uiScale.enabled=true",
+        "-Dsun.awt.windows.useCommonItemDialog=true",
     )
     mainClass.set("flowui.AppKt")
 }
