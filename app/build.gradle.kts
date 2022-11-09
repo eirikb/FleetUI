@@ -54,7 +54,7 @@ application {
         "-Dsun.java2d.uiScale.enabled=true",
         "-Dsun.awt.windows.useCommonItemDialog=true",
     )
-    mainClass.set("flowui.AppKt")
+    mainClass.set("fleetui.AppKt")
 }
 
 // Fleet is built with 17, must be the same
