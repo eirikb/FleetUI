@@ -1,16 +1,9 @@
-# FlowUI
+# FleetUI
 
-PoC for noria stand-alone from Fleet.  
-Gradle setup based on _gradle init_ + app.  
-Requires Fleet to be installed.
+Proof of concept stand-alone [Fleet](https://www.jetbrains.com/fleet) UI.
 
-First:  
-Check if `fleetInstallDir` in _app/build.gradle.kts_ is correct.
-
-Note:  
-Will only work on Linux.  
-Tested on Arch Linux with liberica-jdk-17-full.
-
+JetBrains Fleet has its own UI called Noria.  
+This project tries to use Noria outside of Fleet.
 
 Build:
 

@@ -1,4 +1,4 @@
-package flowui
+package fleetui
 
 import fleet.dock.api.ThemeId
 import fleet.themes.FleetTheme
@@ -38,13 +38,8 @@ fun registerFonts() {
 }
 
 fun NoriaContext.mainWindow() {
-    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("/home/eirikb/dev/eirikb/FlowUI/light.json")))
-//DEFAULT_THEME.loadNoriaTheme()
+    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("../light.json")))
     val dndRootState: StateCell<DnDRoot> = state { DnDRoot.Idle }
-    //val keymapText =
-    //FleetPaths.Frontend.keymapDirectory.resolve("${FleetFrontendSettingsKeys.keymap.defaultValue}.json").readText()
-    //val shortcuts = parseKeymap(keymapText, KeymapSource.DEFAULT).map { it.binding }
-    //val keymap = keymap(shortcuts).mapValues { (_, keyBindings) -> keyBindings.map { it.trigger }.toSet() }
     val actionManager = DefaultActionManager()
     val portalNetwork = remember { MutableOpenMap.empty<PortalNetwork>() }
     cell(OpenMap {
@@ -59,7 +54,6 @@ fun NoriaContext.mainWindow() {
             initialSize = Size(800.px, 600.px),
             initialPosition = null,
             initialScreenId = null,
-            //keymap = keymap
         ) {
             focusData {
                 inputHandler { event ->
@@ -97,9 +91,7 @@ fun main() {
         (action?.perform(actionContext) ?: Propagate.CONTINUE) to null
     }
 
-    println("Starting...")
     eventLoop(windowManager, eventHandlerRegistry::runHandlers, Dispatchers.Default + eventHandlerRegistry) {
-        println("Never reached")
         withRenderLoop(
             root = {
                 mainWindow()

@@ -1,2 +1,2 @@
-rootProject.name = "flowui"
+rootProject.name = "fleetui"
 include("app")
