@@ -80,7 +80,6 @@ fun main() {
 
     val eventHandlerRegistry = EventHandlerRegistry()
     eventHandlerRegistry.registerHandler { event ->
-        println("Got event $event")
         event.letIfIs(WindowEvent.CloseRequested) {
             windowManager.stopApplication()
             EventHandlerResult.Handled
