@@ -20,3 +20,10 @@ Run:
 ```bash
 ./gradlew run
 ```
+
+This will run the gallery app, with example components.
+
+## Thanks to JetBrains
+
+This would not have been possible without a ton of help from Manuel Unterhofer and Sergey Ignatov at JetBrains.  
+They have also allowed me to share this project online.
