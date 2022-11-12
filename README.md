@@ -4,17 +4,17 @@
 
 This is a stand-alone demo of the UI used in [Fleet](https://www.jetbrains.com/fleet).  
 Fleet has its own UI, called Noria. Contrary to what some might think it does not use Compose.  
-JetBrains made Noria because Compose was not available at the time when Fleet was created.
+JetBrains made Noria because Compose was not available at the time when Fleet was created.  
+Noria is similar to Compose, and uses [Skiko](https://github.com/JetBrains/skiko) as a binding to Skia.  
+In theory it can build to Windows, Linux, MacOS, Android, iOS and web.
 
 This project tries to use Noria outside of Fleet.  
-Making it possible for devs to make a full GUI, like Compose or flutter.  
-Noria uses [Skiko](https://github.com/JetBrains/skiko), and can in theory build to Windows, Linux, MacOS, Android, iOS
-and web.
+Making it possible for devs to make a full GUI, like Compose or flutter.
 
 Build:
 
 ```bash
-./gradlew clean build
+./gradlew build
 ```
 
 Run:
@@ -29,3 +29,25 @@ This will run the gallery app, with example components.
 
 This would not have been possible without a ton of help from Manuel Unterhofer and Sergey Ignatov at JetBrains.  
 They have also allowed me to share this project online.
+
+## FAQ
+
+**Q**: Wait what, Fleet doesn't use Compose?  
+**A**: No it does not.  
+Not JetPack Compose, not JetBrains Compose
+
+**Q**: Is this a whole new UI?  
+**A**: Yes
+
+**Q**: Are you allowed to share this?  
+**A**: Yes
+
+**Q**: Can this be used in production?  
+**A**: At the moment, Discouraged
+
+**Q**: Does this work on all platforms?  
+**A**: Haven't tried, but don't think so, Kotlin multiplatform would require source code which is not yet available for
+Noria
+
+**Q**: Where are the gallery example code?  
+**A**: I have them, but haven't asked if I can share them yet
