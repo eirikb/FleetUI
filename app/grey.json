@@ -1,0 +1,1025 @@
+{
+    "meta": {
+        "theme.name": "Grey",
+        "theme.kind": "Light",
+        "theme.version": 5
+    },
+    "colors": {
+        "border": "D1D1D1",
+        "fill": "White",
+        "focusRing": "97C3F3",
+        "shadow": "2D2D2D",
+        "text": "1F1F1F",
+
+        "@focused.border": "87AFDA",
+
+        "@secondary.text": "808080",
+        "@secondary.fill": "E0E0E0",
+
+        "@placeholder.text": "808080",
+
+        "@dimmed.fill": "Transparent",
+        "@dimmed.text": "808080",
+
+        "@disabled.fill": "Transparent",
+        "@disabled.text": "8C8C8C",
+
+        "@error.fill": "D90019",
+        "@error.text": "White",
+
+        "@selected.fill": "D1D1D1",
+
+        "@success.text": "59A869",
+
+        "button.border": "D1D1D1",
+        "button.fill": "White",
+        "button.text": "383838",
+        "button.@disabled.fill": "Transparent",
+        "button.@disabled.text": "8C8C8C",
+        "button.@focused.border": "87AFDA",
+        "button.@hovered.fill": "FAFAFA",
+        "button.@pressed.fill": "F2F2F2",
+
+        "checkbox.fill": "White",
+        "checkbox.border": "ADADAD",
+        "checkbox.icon": "White",
+        "checkbox.@checked.fill": "4F9EE3",
+        "checkbox.@checked.border": "4F9EE3",
+        "checkbox.@checked.@focused.fill": "4F9EE3",
+        "checkbox.@checked.@focused.border": "ACCFF7",
+        "checkbox.@checked.@hovered.fill": "4F9EE3",
+        "checkbox.@checked.@hovered.border": "4F9EE3",
+        "checkbox.@checked.@focused.@hovered.fill": "4F9EE3",
+        "checkbox.@checked.@focused.@hovered.border": "ACCFF7",
+        "checkbox.@partial.fill": "4F9EE3",
+        "checkbox.@partial.border": "4F9EE3",
+        "checkbox.@partial.@focused.fill": "4F9EE3",
+        "checkbox.@partial.@focused.border": "ACCFF7",
+        "checkbox.@partial.@hovered.fill": "4F9EE3",
+        "checkbox.@partial.@hovered.border": "4F9EE3",
+        "checkbox.@partial.@focused.@hovered.fill": "4F9EE3",
+        "checkbox.@partial.@focused.@hovered.border": "ACCFF7",
+        "checkbox.@partial.@pressed.fill": "4F9EE3",
+        "checkbox.@partial.@pressed.border": "4F9EE3",
+        "checkbox.@partial.@focused.@pressed.fill": "4F9EE3",
+        "checkbox.@partial.@focused.@pressed.border": "ACCFF7",
+        "checkbox.@disabled.fill": "Transparent",
+        "checkbox.@disabled.border": "BDBDBD",
+        "checkbox.@disabled.icon": "ABABAB",
+        "checkbox.@disabled.text": "8C8C8C",
+        "checkbox.@focused.border": "7B9FC7",
+        "checkbox.@focused.@hovered.border": "7B9FC7",
+        "checkbox.@focused.@pressed.fill": "White",
+        "checkbox.@focused.@pressed.border": "7B9FC7",
+
+        "completion.match.text": "0081DE",
+        "completion.match.fill": "Transparent",
+
+        "dangerous.button.fill": "C93E3E",
+        "dangerous.button.focusRing": "DD7178",
+        "dangerous.button.text": "White",
+        "dangerous.button.border": "Transparent",
+        "dangerous.button.@hovered.fill": "BF3B3B",
+        "dangerous.button.@pressed.fill": "B53838",
+        "dangerous.button.@disabled.border": "D1D1D1",
+        "dangerous.button.@disabled.fill": "Transparent",
+        "dangerous.button.@disabled.text": "8C8C8C",
+        "dangerous.button.@focused.border": "F2A2A3",
+
+        "dialog.fill": "F2F3F5",
+        "dialog.editor.fill": "F2F3F5",
+        "dialog.editor.currentLine.fill": "EAEBED",
+        "dialog.editor.currentLine.@focused.fill": "EAEBED",
+        "dialog.tab.fill": "F2F3F5",
+        "dialog.tab.pane.fill": "F2F3F5",
+        "dialog.tab.@selected.border": "4787D1",
+        "dialog.tab.@hovered.fill": "E3E5E8",
+
+        "diff.added.fill": "BEE6BE",
+        "diff.deleted.fill": "D6D6D6",
+        "diff.modified.fill": "CAD9FA",
+        "diff.conflict.fill": "FFD5CC",
+        "diff.added.file": "0A7700",
+        "diff.modified.file": "0032A0",
+        "diff.conflict.file": "FF0000",
+
+        "dnd.fill": "407FC720%",
+
+        "interline.block.fill": "F2F3F5",
+        "interline.editor.currentLine.fill": "EAEBED",
+        "interline.editor.currentLine.@focused.fill": "EAEBED",
+
+        "editor.fill": "FAFBFC",
+        "editor.text": "Grey",
+        "editor.braceHighlight.fill": "BCE0E0",
+        "editor.caret.fill": "Black",
+        "editor.currentLine.fill": "F2F3F5",
+        "editor.currentLine.@focused.fill": "F2F3F5",
+        "editor.lineNumber.text": "B3B3B3",
+        "editor.lineNumber.@selected.text": "808080",
+        "editor.whitespace.text": "ADADAD",
+
+        "header.fill": "F2F3F5",
+
+        "icon.border": "Transparent",
+        "icon.blue.fill": "389FD6",
+        "icon.gray.fill": "6E6E6E",
+        "icon.green.fill": "59A869",
+        "icon.orange.fill": "EDA200",
+        "icon.red.fill": "DB5860",
+
+        "icon.button.border": "Transparent",
+        "icon.button.fill": "Transparent",
+        "icon.button.@disabled.text": "C1C1C1",
+        "icon.button.@focused.border": "4787D1",
+        "icon.button.@hovered.fill": "DFDFDF",
+        "icon.button.@pressed.fill": "D1D1D1",
+        "icon.button.@selected.fill": "DAE4ED",
+        "icon.button.@selected.text": "389FD6",
+        "icon.button.@selected.@disabled.fill": "E8E8E8",
+        "icon.button.@selected.@focused.border": "4787D1",
+        "icon.button.@selected.@focused.fill": "DAE4ED",
+        "icon.button.@selected.@focused.text": "389FD6",
+        "icon.button.@selected.@focused.@hovered.fill": "CCDDED",
+        "icon.button.@selected.@focused.@hovered.text": "389FD6",
+        "icon.button.@selected.@hovered.fill": "CCDDED",
+        "icon.button.@selected.@hovered.text": "389FD6",
+        "icon.button.@selected.@pressed.fill": "C2D9ED",
+        "icon.button.@selected.@pressed.text": "389FD6",
+
+        "input.@disabled.fill": "Transparent",
+        "input.@disabled.text": "8C8C8C",
+        "input.@focused.border": "87AFDA",
+        "input.@error.border": "D87B7B",
+        "input.@error.@focused.border": "D87B7B",
+        "input.@error.@focused.focusRing": "FA9D9D",
+
+        "link.text": "2163A6",
+
+        "list.cursor.border": "4787D1",
+
+        "popup.border": "B4B5B6",
+
+        "primary.button.fill": "4E8BC9",
+        "primary.button.text": "White",
+        "primary.button.focusRing": "84B8F0",
+        "primary.button.border": "4E8BC9",
+        "primary.button.@hovered.fill": "4A84BF",
+        "primary.button.@pressed.fill": "467DB5",
+        "primary.button.@disabled.border": "D1D1D1",
+        "primary.button.@disabled.fill": "Transparent",
+        "primary.button.@disabled.text": "8C8C8C",
+        "primary.button.@focused.border": "A9C9F5",
+
+        "progress.fill": "1E82E6",
+        "progress.container.fill": "D1D1D1",
+        "progress.@indeterminate.@gradient.fill": "91C5F2",
+
+        "scrollbar.fill": "00000030%",
+        "scrollbar.@dimmed.fill": "00000020%",
+        "scrollbar.@hovered.fill": "00000040%",
+
+        "selection.fill": "C0D8F0",
+        "selection.@dimmed.fill": "E0E0E0",
+        "selection.@hovered.fill": "F0F0F0",
+
+        "separator.fill": "E1E3E6",
+        "mainSplit.separator.fill": "E1E3E6",
+
+        "simpleToggle.circle.@disabled.fill": "White",
+        "simpleToggle.circle.fill": "White",
+        "simpleToggle.strip.@disabled.@hovered.fill": "C4C4C4",
+        "simpleToggle.strip.@disabled.fill": "C4C4C4",
+        "simpleToggle.strip.fill": "4D8ACA",
+
+        "match.fill": "FFD080",
+        "match.text": "000000",
+
+        "tab.border": "Transparent",
+        "tab.fill": "F2F3F5",
+        "tab.@selected.fill": "FAFBFC",
+        "tab.@hovered.fill": "E3E5E8",
+        "tab.pane.fill": "F2F3F5",
+        "tab.@focused.@selected.border": "4787D1",
+        "tab.@focused.@selected.fill": "FAFBFC",
+
+        "terminal.ansiBlack.fill": "000000",
+        "terminal.ansiBlack.text": "000000",
+        "terminal.ansiBlue.fill": "508ED9",
+        "terminal.ansiBlue.text": "2686FF",
+        "terminal.ansiBrightBlack.fill": "b7b7b7",
+        "terminal.ansiBrightBlack.text": "b7b7b7",
+        "terminal.ansiBrightBlue.fill": "54A1FF",
+        "terminal.ansiBrightBlue.text": "0073FF",
+        "terminal.ansiBrightCyan.fill": "35E6E6",
+        "terminal.ansiBrightCyan.text": "24E0FF",
+        "terminal.ansiBrightGreen.fill": "3DD456",
+        "terminal.ansiBrightGreen.text": "33F253",
+        "terminal.ansiBrightMagenta.fill": "B63DDB",
+        "terminal.ansiBrightMagenta.text": "CC26FF",
+        "terminal.ansiBrightRed.fill": "F06C5D",
+        "terminal.ansiBrightRed.text": "FCA4A7",
+        "terminal.ansiBrightWhite.fill": "FAFBFC",
+        "terminal.ansiBrightWhite.text": "ffffff",
+        "terminal.ansiBrightYellow.fill": "DBC051",
+        "terminal.ansiBrightYellow.text": "FFD83B",
+        "terminal.ansiCyan.fill": "84FAFA",
+        "terminal.ansiCyan.text": "20B3B3",
+        "terminal.ansiGreen.fill": "7BBA85",
+        "terminal.ansiGreen.text": "4DBB5F",
+        "terminal.ansiMagenta.fill": "DB75FA",
+        "terminal.ansiMagenta.text": "CC37FA",
+        "terminal.ansiRed.fill": "CE0505",
+        "terminal.ansiRed.text": "EF341E",
+        "terminal.ansiWhite.fill": "e5e5e5",
+        "terminal.ansiWhite.text": "e5e5e5",
+        "terminal.ansiYellow.fill": "FAE387",
+        "terminal.ansiYellow.text": "B0993C",
+
+        "toggle.border": "D1D1D1",
+        "toggle.fill": "White",
+        "toggle.@disabled.fill": "Transparent",
+        "toggle.@disabled.text": "8C8C8C",
+        "toggle.@focused.border": "87AFDA",
+        "toggle.@hovered.fill": "FAFAFA",
+        "toggle.@pressed.fill": "F2F2F2",
+        "toggle.@selected.fill": "4E8BC9",
+        "toggle.@selected.text": "White",
+        "toggle.@disabled.border": "Transparent",
+        "toggle.@selected.border": "4077B3",
+        "toggle.@selected.@disabled.fill": "E8E8E8",
+        "toggle.@selected.@focused.border": "A9C9F5",
+        "toggle.@selected.@focused.fill": "4E8BC9",
+        "toggle.@selected.@focused.text": "White",
+        "toggle.@selected.@hovered.text": "White",
+        "toggle.@selected.@hovered.fill": "4E8BC9",
+        "toggle.@selected.@pressed.text": "White",
+        "toggle.@selected.@pressed.fill": "4E8BC9",
+        "toggle.@selected.@focused.@hovered.fill": "4E8BC9",
+        "toggle.@selected.@focused.@hovered.text": "White",
+        "toggle.@selected.@focused.@pressed.fill": "4E8BC9",
+        "toggle.@selected.@focused.@pressed.text": "White",
+
+        "tool.fill": "FAFBFC",
+
+        "tooltip.fill": "F2F3F5",
+
+        "tree.cursor.border": "4787D1",
+        "tree.@focused.border": "4787D1",
+
+        "windows.close.button.@hovered.fill": "C42B1C",
+        "windows.close.button.@hovered.text": "White",
+        "windows.close.button.@pressed.fill": "C73C31",
+        "windows.close.button.@pressed.text": "EDBEBB"
+    },
+    "text-attributes": {
+        "editor.text.scheme": {
+            "fgColor": "Grey",
+            "layer": 1,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "editor.text.composable": {
+            "decoration": {
+                "color": "Grey",
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "editor.selection": {
+            "bgColor": "C0D8F0",
+            "layer": 2000,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "editor.search.results": {
+            "bgColor": "BFDEBA",
+            "stripeColor": "71B362",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "editor.rename.entries": {
+            "bgColor": "CCCCFF",
+            "stripeColor": "8E8EB2",
+            "layer": 100,
+            "showEmptyIntervals": true
+        },
+        "editor.rename.current": {
+            "showEmptyIntervals": true,
+            "fullLine": false,
+            "layer": 100,
+            "decoration": {
+                "color": "0055FF",
+                "style": "BORDER"
+        }
+        },
+        "comment": {
+            "fgColor": "808080",
+            "layer": 5,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "comment.parameter": {
+            "fgColor": "3D3D3D",
+            "layer": 5,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "comment.parameter.value": {
+            "fgColor": "3D3D3D",
+            "layer": 5,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "link": {},
+        "link.always.visible": {
+            "decoration": {
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "link.hovered": {
+            "fgColor": "185B9E",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "185B9E",
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "keyword": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "keyword.typeModifier": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "metadata": {
+            "fgColor": "808000",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "number": {
+            "fgColor": "Blue",
+            "layer": 10,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "boolean": {
+            "fgColor": "Dark Blue",
+            "layer": 10,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string": {
+            "fgColor": "Green",
+            "layer": 15,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.binary": {
+            "fgColor": "616605",
+            "layer": 15
+        },
+        "string.escape": {
+            "fgColor": "B81692",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.escape.alternative": {
+            "fgColor": "5511BF",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.formatItem": {
+            "fgColor": "784E30",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.regexp": {
+            "fgColor": "B81692",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier": {
+            "fgColor": "Grey",
+            "layer": 10,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.this": {
+            "fgColor": "8C4F7F",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.underCaret": {
+            "bgColor": "E4E4FF",
+            "stripeColor": "BAA8FF",
+            "layer": 1000,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.constant": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.constant.predefined": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.variable.local": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.variable.local.reassigned": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "909090",
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "identifier.parameter": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.declaration": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.declaration.js": {
+            "fgColor": "Black",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call.js": {
+            "fgColor": "Black",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call.suspend": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call.package": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.method.static": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            }
+        },
+        "identifier.type": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.field": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.field.static": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            }
+        },
+        "identifier.interface": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.class": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.enum": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.struct": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.valueType": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.typeParameter": {
+            "fgColor": "20999D",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.namedArgument": {
+            "fgColor": "4A86E8",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.other": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "attributeName.html": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "attributeValue.html": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "entityReference.html": {
+            "fgColor": "Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "tag.html": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "tagName.html": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "tagName.custom.html": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "attributeName.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "hex.css": {
+            "fgColor": "Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.css": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.variable.css": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "interpolation.css": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "jsCodeDelimiter.css": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "jsCodeInjection.css": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "keyword.css": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "keyword.extend.css": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "keyword.global.css": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "keyword.important.css": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "mixin.css": {
+            "fgColor": "Cyan",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "bold": true
+            }
+        },
+        "number.css": {
+            "fgColor": "Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "number.unit.css": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "propertyName.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "propertyValue.css": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "punctuation.css": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "selector.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "selector.id.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "selector.class.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "selector.pseudo.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "selector.tag.css": {
+            "fgColor": "Dark Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.css": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "unicode.css": {
+            "fgColor": "Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "url.css": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "markup.heading": {
+            "fgColor": "Purple",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "markup.bold": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "bold": true
+            }
+        },
+        "markup.italic": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            }
+        },
+        "markup.code.block": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "markup.href": {
+            "fgColor": "185B9E",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            },
+            "decoration": {
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "punctuation": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "punctuation.operator": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "snippet": {
+            "bgColor": "CCCCFF",
+            "layer": 1,
+            "fullLine": false,
+            "showEmptyIntervals": true,
+            "borderRadius": "2.0"
+        },
+        "debug.currentFrame": {
+            "bgColor": "2154A6",
+            "fgColor": "White",
+            "stripeColor": "2154A6",
+            "layer": -68,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.added": {
+            "bgColor": "E2F3E3",
+            "stripeColor": "AADEAA",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.added.word": {
+            "bgColor": "BEE6BE",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "diff.added.withBorder": {
+            "bgColor": "E2F3E3",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "BEE6BE",
+                "style": "BORDER"
+            }
+        },
+        "diff.added.empty": {
+            "bgColor": "AADEAA",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "diff.deleted": {
+            "bgColor": "ECECED",
+            "stripeColor": "C8C8C8",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.deleted.word": {
+            "bgColor": "D6D6D6",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "diff.deleted.withBorder": {
+            "bgColor": "ECECED",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "D6D6D6",
+                "style": "BORDER"
+            }
+        },
+        "diff.deleted.empty": {
+            "bgColor": "ADADAD",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "diff.modified": {
+            "bgColor": "E7EDFB",
+            "stripeColor": "3399FF",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.modified.word": {
+            "bgColor": "B8CBF5",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "diff.modified.withBorder": {
+            "bgColor": "E7EDFB",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "B8CBF5",
+                "style": "BORDER"
+            }
+        },
+        "diff.conflict.withBorder": {
+            "bgColor": "FFD5CC",
+            "layer": -68,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "FFC8BD",
+                "style": "BORDER"
+            }
+        },
+        "problem.error": {
+            "stripeColor": "CF5B56",
+            "layer": 70,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "D90019",
+                "style": "WAVY"
+            }
+        },
+        "problem.error.badCharacter": {
+            "stripeColor": "CF5B56",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": true,
+            "decoration": {
+                "color": "D90019",
+                "style": "WAVY"
+            }
+        },
+        "problem.warning": {
+            "bgColor": "F6EBBC",
+            "stripeColor": "EBC700",
+            "layer": 60,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "problem.warning.weak": {
+            "stripeColor": "D9CFAD",
+            "layer": 40,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "CCCCCC",
+                "style": "WAVY"
+            }
+        },
+        "problem.deprecated": {
+            "layer": 30,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "404040",
+                "style": "SOLID",
+                "position": "THROUGH",
+                "thickness": 1.0
+            }
+        },
+        "problem.info": {
+            "layer": 50,
+            "decoration": {
+                "color": "A366C4"
+            }
+        },
+        "problem.unknown": {
+            "fgColor": "D90016",
+            "stripeColor": "D90019",
+            "layer": 50,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "problem.unused": {
+            "fgColor": "808080",
+            "layer": 60
+        },
+        "transparent": {
+        }
+    },
+    "palette": {
+        "White": "FFFFFF",
+        "Grey": "262626",
+        "Black": "000000",
+        "Green": "106B10",
+        "Blue": "1740E6",
+        "Dark Blue": "071591",
+        "Purple": "660E7A",
+        "Cyan": "008080",
+        "Transparent": "FFFFFF0%"
+    }
+}

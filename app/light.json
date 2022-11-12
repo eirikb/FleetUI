@@ -173,7 +173,6 @@
     "diff.modified.@selected.fill": "Blue-40",
     "diff.conflict.file": "9A651E",
     "diff.conflict.fill": "Yellow-10",
-    "git.blame.fill": "Yellow-10",
 
     "dnd.fill": "0273EB20%",
 
@@ -349,7 +348,6 @@
     "completion.match.fill": "Transparent",
     "completion.match.text": "Blue-20",
 
-    "parameterInfo.match.text": "Blue-20",
 
     "tab.border": "Transparent",
     "tab.fill": "Grey-100",
