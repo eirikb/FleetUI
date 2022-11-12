@@ -1,3 +1,5 @@
+[![Build](https://github.com/eirikb/FleetUI/actions/workflows/build.yml/badge.svg)](https://github.com/eirikb/FleetUI/actions/workflows/build.yml)
+
 # FleetUI Demo
 
 This is a stand-alone demo of the UI used in [Fleet](https://www.jetbrains.com/fleet).  
