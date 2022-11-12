@@ -1,6 +1,8 @@
 [![Build](https://github.com/eirikb/FleetUI/actions/workflows/build.yml/badge.svg)](https://github.com/eirikb/FleetUI/actions/workflows/build.yml)
 
 # FleetUI Demo
+![image](https://user-images.githubusercontent.com/241706/201476692-be4520c9-9cb9-45fa-b556-d2e3fc6de2bb.png)  
+![image](https://user-images.githubusercontent.com/241706/201476698-9276d762-0fad-49d5-91ac-c9be41792446.png)
 
 This is a stand-alone demo of the UI used in [Fleet](https://www.jetbrains.com/fleet).  
 Fleet has its own UI, called Noria. Contrary to what some might think it does not use Compose.  
