@@ -12,6 +12,7 @@ import noria.*
 import noria.model.*
 import noria.model.dimensions.Size
 import noria.model.dimensions.px
+import noria.ui.ResourceReader
 import noria.ui.components.*
 import noria.ui.components.examples.noriaExamples
 import noria.ui.components.gallery.galleryView
@@ -30,6 +31,8 @@ import noria.windowManagement.impl.skiko.AwtSkikoWindowManager
 import org.jetbrains.skia.FontMgr
 import org.jetbrains.skia.paragraph.FontCollection
 import org.jetbrains.skia.paragraph.TypefaceFontProvider
+import java.io.FileInputStream
+import java.io.InputStream
 import java.nio.file.Path
 
 fun registerFonts() {
@@ -37,8 +40,12 @@ fun registerFonts() {
     setFontCollection(FontCollection().setDefaultFontManager(FontMgr.default).setAssetFontManager(fontProvider))
 }
 
+class FileResourceReader(private val path: String) : ResourceReader {
+    override fun read(p0: String?) = FileInputStream("$path/$p0")
+}
+
 fun NoriaContext.mainWindow() {
-    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("../light.json")))
+    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("light.json")))
     val dndRootState: StateCell<DnDRoot> = state { DnDRoot.Idle }
     val actionManager = DefaultActionManager()
     val portalNetwork = remember { MutableOpenMap.empty<PortalNetwork>() }
@@ -48,6 +55,7 @@ fun NoriaContext.mainWindow() {
         set(ActionManagerKey, actionManager)
         set(DnDKey, dndRootState)
         set(PortalNetworkKey, portalNetwork)
+        set(ResourceReaderKey, FileResourceReader("icons"))
     }) {
         window(
             title = "Gallery",
@@ -80,7 +88,6 @@ fun main() {
 
     val eventHandlerRegistry = EventHandlerRegistry()
     eventHandlerRegistry.registerHandler { event ->
-        println("Got event $event")
         event.letIfIs(WindowEvent.CloseRequested) {
             windowManager.stopApplication()
             EventHandlerResult.Handled

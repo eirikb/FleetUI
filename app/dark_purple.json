@@ -1,0 +1,999 @@
+{
+    "meta": {
+        "theme.name": "Dark Purple",
+        "theme.kind": "Dark",
+        "theme.version": 5
+    },
+    "colors": {
+        "border": "4E4C63",
+        "fill": "2C2C3B",
+        "focusRing": "693687",
+        "shadow": "1D1D26",
+        "text": "D0D0D9",
+
+        "@focused.border": "904AC2",
+
+        "@secondary.text": "6D6A80",
+
+        "@placeholder.text": "6D6A80",
+
+        "@dimmed.fill": "Transparent",
+        "@dimmed.text": "6D6A80",
+
+        "@disabled.fill": "Transparent",
+        "@disabled.text": "646078",
+
+        "@error.fill": "DD3962",
+        "@error.text": "White",
+
+        "@selected.fill": "49415C",
+
+        "@success.text": "25AD6B",
+
+        "button.border": "544F70",
+        "button.fill": "45405C",
+        "button.text": "D0D0D9",
+        "button.@disabled.border": "45405C",
+        "button.@disabled.fill": "Transparent",
+        "button.@disabled.text": "646078",
+        "button.@focused.border": "814F9E",
+        "button.@hovered.fill": "4C4766",
+        "button.@hovered.text": "D0D0D9",
+        "button.@pressed.fill": "565073",
+        "button.@pressed.text": "D0D0D9",
+
+        "checkbox.border": "756B8C",
+        "checkbox.icon": "A4A1B3",
+        "checkbox.fill": "343445",
+        "checkbox.@disabled.border": "4C4766",
+        "checkbox.@disabled.icon": "565073",
+        "checkbox.@disabled.text": "646078",
+        "checkbox.@focused.border": "8A64B3",
+        "checkbox.@disabled.fill": "2C2C3B",
+
+        "completion.match.text": "ED94FF",
+        "completion.match.fill": "Transparent",
+
+        "dangerous.button.fill": "DD3962",
+        "dangerous.button.focusRing": "A72A3F",
+        "dangerous.button.text": "White",
+        "dangerous.button.border": "Transparent",
+        "dangerous.button.@hovered.fill": "DF476D",
+        "dangerous.button.@pressed.fill": "E14F73",
+        "dangerous.button.@disabled.border": "45405C",
+        "dangerous.button.@disabled.fill": "Transparent",
+        "dangerous.button.@disabled.text": "646078",
+        "dangerous.button.@focused.border": "ED7388",
+
+        "dialog.fill": "2C2C3B",
+        "dialog.editor.fill": "2C2C3B",
+        "dialog.editor.currentLine.fill": "363445",
+        "dialog.editor.currentLine.@focused.fill": "363445",
+        "dialog.tab.fill": "Transparent",
+        "dialog.tab.@selected.border": "904AC2",
+        "dialog.tab.@hovered.fill": "3E3A4E",
+        "dialog.tab.pane.fill": "2C2C3B",
+
+        "diff.added.fill": "39703F",
+        "diff.deleted.fill": "DFDFE6",
+        "diff.modified.fill": "3E7AB3",
+        "diff.conflict.fill": "BD3C5F",
+        "diff.added.file": "76B366",
+        "diff.modified.file": "62BAF5",
+        "diff.conflict.file": "F0507A",
+
+        "dnd.fill": "FFFFFF20%",
+
+        "interline.block.fill": "252533",
+        "interline.editor.currentLine.fill": "363445",
+        "interline.editor.currentLine.@focused.fill": "363445",
+
+        "editor.fill": "1D1D26",
+        "editor.text": "Grey",
+        "editor.braceHighlight.fill": "4E4766",
+        "editor.caret.fill": "White",
+        "editor.currentLine.fill": "242433",
+        "editor.currentLine.@focused.fill": "242433",
+        "editor.lineNumber.text": "575566",
+        "editor.lineNumber.@selected.text": "9A97A8",
+        "editor.whitespace.text": "8B85A6",
+
+        "header.fill": "2C2C3B",
+
+        "icon.border": "Transparent",
+        "icon.blue.fill": "4D85FF",
+        "icon.gray.fill": "A4A1B3",
+        "icon.green.fill": "25AD6B",
+        "icon.orange.fill": "CABA2D",
+        "icon.red.fill": "C63A5D",
+
+        "icon.button.border": "Transparent",
+        "icon.button.fill": "Transparent",
+        "icon.button.@disabled.text": "646078",
+        "icon.button.@focused.border": "814F9E",
+        "icon.button.@hovered.fill": "453E57",
+        "icon.button.@pressed.fill": "4C4766",
+        "icon.button.@selected.fill": "49415C",
+        "icon.button.@selected.text": "B279F2",
+        "icon.button.@selected.@disabled.fill": "323245",
+        "icon.button.@selected.@focused.border": "814F9E",
+        "icon.button.@selected.@focused.fill": "49415C",
+        "icon.button.@selected.@focused.@hovered.fill": "49415C",
+        "icon.button.@selected.@hovered.fill": "49415C",
+        "icon.button.@selected.@hovered.text": "B279F2",
+        "icon.button.@selected.@pressed.text": "B279F2",
+
+        "input.@disabled.border": "45405C",
+        "input.@disabled.fill": "Transparent",
+        "input.@disabled.text": "646078",
+        "input.@error.border": "993750",
+        "input.@focused.border": "814F9E",
+        "input.@error.@focused.border": "D4677A",
+        "input.@error.@focused.focusRing": "993750",
+
+        "link.text": "7094ff",
+        "link.focusRing": "7094ff",
+
+        "list.cursor.border": "904AC2",
+
+        "popup.border": "4e4b61",
+
+        "primary.button.fill": "6B388F",
+        "primary.button.focusRing": "784299",
+        "primary.button.border": "7C519C",
+        "primary.button.@hovered.fill": "744496",
+        "primary.button.@pressed.fill": "784A99",
+        "primary.button.@disabled.border": "45405C",
+        "primary.button.@disabled.fill": "Transparent",
+        "primary.button.@disabled.text": "646078",
+        "primary.button.@focused.border": "8465A6",
+
+        "progress.fill": "A85ED6",
+        "progress.container.fill": "1D1D26",
+        "progress.@indeterminate.@gradient.fill": "674182",
+
+        "scrollbar.fill": "FFFFFF30%",
+        "scrollbar.@dimmed.fill": "FFFFFF20%",
+        "scrollbar.@hovered.fill": "FFFFFF40%",
+
+        "selection.fill": "713A91",
+        "selection.@dimmed.fill": "3D3952",
+        "selection.@hovered.fill": "2C2C3B",
+
+        "separator.fill": "4E4C63",
+        "mainSplit.separator.fill": "4E4C63",
+
+        "simpleToggle.circle.@disabled.fill": "D0D0D9",
+        "simpleToggle.circle.fill": "D0D0D9",
+        "simpleToggle.strip.@disabled.@hovered.fill": "666380",
+        "simpleToggle.strip.@disabled.fill": "666380",
+        "simpleToggle.strip.fill": "6B388F",
+        
+        "match.fill": "CCA929",
+        "match.text": "000000",
+
+        "tab.border": "Transparent",
+        "tab.fill": "2C2C3B",
+        "tab.@selected.fill": "1D1D26",
+        "tab.@hovered.fill": "3E3A4E",
+        "tab.pane.fill": "2C2C3B",
+        "tab.@focused.@selected.border": "904AC2",
+        "tab.@focused.@selected.fill": "1D1D26",
+
+        "terminal.ansiBlack.fill": "484848",
+        "terminal.ansiBlack.text": "B3B3B3",
+        "terminal.ansiBlue.fill": "405C80",
+        "terminal.ansiBlue.text": "1D6BCC",
+        "terminal.ansiBrightBlack.fill": "424242",
+        "terminal.ansiBrightBlack.text": "595959",
+        "terminal.ansiBrightBlue.fill": "314966",
+        "terminal.ansiBrightBlue.text": "0067E6",
+        "terminal.ansiBrightCyan.fill": "2F5F66",
+        "terminal.ansiBrightCyan.text": "00BAD6",
+        "terminal.ansiBrightGreen.fill": "2D6654",
+        "terminal.ansiBrightGreen.text": "009E6F",
+        "terminal.ansiBrightMagenta.fill": "4E3166",
+        "terminal.ansiBrightMagenta.text": "EB4DDE",
+        "terminal.ansiBrightRed.fill": "66333A",
+        "terminal.ansiBrightRed.text": "C7001B",
+        "terminal.ansiBrightWhite.fill": "1D1D26",
+        "terminal.ansiBrightWhite.text": "0D0D0D",
+        "terminal.ansiBrightYellow.fill": "665234",
+        "terminal.ansiBrightYellow.text": "E09119",
+        "terminal.ansiCyan.fill": "477880",
+        "terminal.ansiCyan.text": "2CCCE6",
+        "terminal.ansiGreen.fill": "437A6A",
+        "terminal.ansiGreen.text": "88DBD7",
+        "terminal.ansiMagenta.fill": "6B5280",
+        "terminal.ansiMagenta.text": "EB83E2",
+        "terminal.ansiRed.fill": "804A52",
+        "terminal.ansiRed.text": "C73649",
+        "terminal.ansiWhite.fill": "898989",
+        "terminal.ansiWhite.text": "212121",
+        "terminal.ansiYellow.fill": "80653E",
+        "terminal.ansiYellow.text": "FAD075",
+
+        "toggle.border": "544F70",
+        "toggle.fill": "45405C",
+        "toggle.@disabled.fill": "Transparent",
+        "toggle.@disabled.text": "646078",
+        "toggle.@focused.border": "814F9E",
+        "toggle.@hovered.fill": "4C4766",
+        "toggle.@pressed.fill": "565073",
+        "toggle.@selected.fill": "6B388F",
+        "toggle.@disabled.border": "Transparent",
+        "toggle.@selected.border": "7C519C",
+        "toggle.@selected.@disabled.fill": "2C2C3B",
+        "toggle.@selected.@focused.border": "8465A6",
+        "toggle.@selected.@focused.fill": "6B388F",
+        "toggle.@selected.@hovered.fill": "744496",
+        "toggle.@selected.@pressed.fill": "784A99",
+        "toggle.@selected.@focused.@hovered.fill": "744496",
+        "toggle.@selected.@focused.@pressed.fill": "784A99",
+
+        "tool.fill": "1D1D26",
+
+        "tooltip.fill": "463f57",
+
+        "tree.cursor.border": "904AC2",
+        "tree.@focused.border": "904AC2",
+
+        "windows.close.button.@hovered.fill": "C42B1C",
+        "windows.close.button.@hovered.text": "White",
+        "windows.close.button.@pressed.fill": "C73C31",
+        "windows.close.button.@pressed.text": "EDBEBB"
+    },
+    "text-attributes": {
+        "editor.text.scheme": {
+            "fgColor": "Grey",
+            "layer": 1,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "editor.text.composable": {
+            "decoration": {
+                "color": "Grey",
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "editor.selection": {
+            "bgColor": "214283",
+            "layer": 2000,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "editor.search.results": {
+            "bgColor": "2D5959",
+            "stripeColor": "3D9999",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "editor.rename.entries": {
+            "bgColor": "113623",
+            "stripeColor": "268053",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "editor.rename.current": {
+            "showEmptyIntervals": true,
+            "fullLine": false,
+            "layer": 100,
+            "decoration": {
+                "color": "Violet",
+                "style": "BORDER"
+            }
+        },
+        "comment": {
+            "fgColor": "676773",
+            "layer": 5,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "comment.parameter": {
+            "fgColor": "5A6E5A",
+            "layer": 5,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "comment.parameter.value": {
+            "fgColor": "8C6154",
+            "layer": 5,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "link": {},
+        "link.always.visible": {
+            "decoration": {
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "link.hovered": {
+            "fgColor": "50AFDE",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "4D7F99",
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "keyword": {
+            "fgColor": "Orange",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "keyword.typeModifier": {
+            "fgColor": "Orange",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "metadata": {
+            "fgColor": "85A658",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "number": {
+            "fgColor": "Blue",
+            "layer": 10,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "boolean": {
+            "fgColor": "Orange",
+            "layer": 10,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string": {
+            "fgColor": "Green",
+            "layer": 15,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.binary": {
+            "fgColor": "A5C261",
+            "layer": 15
+        },
+        "string.escape": {
+            "fgColor": "Orange",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.escape.alternative": {
+            "fgColor": "FF8D1C",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.formatItem": {
+            "fgColor": "Orange",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "string.regexp": {
+            "fgColor": "6897BB",
+            "layer": 25,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier": {
+            "fgColor": "Grey",
+            "layer": 10,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.this": {
+            "fgColor": "8888C6",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.underCaret": {
+            "bgColor": "113623",
+            "stripeColor": "268053",
+            "layer": 1000,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.constant": {
+            "fgColor": "Violet",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.constant.predefined": {
+            "fgColor": "Orange",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.variable.local": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.variable.local.reassigned": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "A6A6A6",
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "identifier.parameter": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.declaration": {
+            "fgColor": "C7A65D",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.declaration.js": {
+            "fgColor": "FFC66D",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call.js": {
+            "fgColor": "FFC66D",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call.suspend": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.function.call.package": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.method.static": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            }
+        },
+        "identifier.type": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.field": {
+            "fgColor": "Violet",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.field.static": {
+            "fgColor": "Violet",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            }
+        },
+        "identifier.interface": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.class": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.enum": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.struct": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.type.valueType": {
+            "fgColor": "Violet",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.typeParameter": {
+            "fgColor": "37CCCC",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.namedArgument": {
+            "fgColor": "Blue",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "identifier.other": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "attributeName.html": {
+          "fgColor": "White",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "attributeValue.html": {
+          "fgColor": "Green",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "entityReference.html": {
+          "fgColor": "Blue",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "tag.html": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "tagName.html": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "tagName.custom.html": {
+          "fgColor": "26BDA4",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "attributeName.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "hex.css": {
+          "fgColor": "Blue",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "identifier.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "identifier.function.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "identifier.variable.css": {
+          "fgColor": "Blue",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "interpolation.css": {
+          "fgColor": "Grey",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "jsCodeDelimiter.css": {
+          "fgColor": "Green",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "jsCodeInjection.css": {
+          "fgColor": "Grey",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "keyword.css": {
+          "fgColor": "Violet",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "keyword.extend.css": {
+          "fgColor": "Violet",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "keyword.global.css": {
+          "fgColor": "Violet",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "keyword.important.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "mixin.css": {
+          "fgColor": "Grey",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "number.css": {
+          "fgColor": "Blue",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "number.unit.css": {
+          "fgColor": "Green",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "propertyName.css": {
+          "fgColor": "White",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "propertyValue.css": {
+          "fgColor": "Green",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "punctuation.css": {
+          "fgColor": "Grey",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "selector.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "selector.id.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "selector.class.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "selector.pseudo.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "selector.tag.css": {
+          "fgColor": "Orange",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "string.css": {
+          "fgColor": "Green",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "unicode.css": {
+          "fgColor": "Blue",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "url.css": {
+          "fgColor": "Green",
+          "layer": 20,
+          "fullLine": false,
+          "showEmptyIntervals": false
+        },
+        "markup.heading": {
+            "fgColor": "Violet",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "markup.bold": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "bold": true
+            }
+        },
+        "markup.italic": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            }
+        },
+        "markup.code.block": {
+            "fgColor": "Green",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "markup.href": {
+            "fgColor": "50AFDE",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "fontModifier": {
+                "italic": true
+            },
+            "decoration": {
+                "style": "SOLID",
+                "position": "UNDER",
+                "thickness": 1.0
+            }
+        },
+        "punctuation": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "punctuation.operator": {
+            "fgColor": "Grey",
+            "layer": 20,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "snippet": {
+            "bgColor": "214283",
+            "layer": 1,
+            "fullLine": false,
+            "showEmptyIntervals": true,
+            "borderRadius": "4.0"
+        },
+        "debug.currentFrame": {
+            "bgColor": "0B3773",
+            "layer": -68,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.added": {
+            "bgColor": "1D2E25",
+            "stripeColor": "42A651",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.added.word": {
+            "bgColor": "1E4723",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "diff.added.withBorder": {
+            "bgColor": "1D2E25",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "1E4723",
+                "style": "BORDER"
+            }
+        },
+        "diff.added.empty": {
+            "bgColor": "42A651",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "diff.deleted": {
+            "bgColor": "2E2E38",
+            "stripeColor": "BABAD9",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.deleted.word": {
+            "bgColor": "474754",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "diff.deleted.withBorder": {
+            "bgColor": "2E2E38",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "474754",
+                "style": "BORDER"
+            }
+        },
+        "diff.deleted.empty": {
+            "bgColor": "BABAD9",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": true
+        },
+        "diff.modified": {
+            "bgColor": "19324A",
+            "stripeColor": "3399FF",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false
+        },
+        "diff.modified.word": {
+            "bgColor": "135280",
+            "layer": -60,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "diff.modified.withBorder": {
+            "bgColor": "19324A",
+            "layer": -69,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "135280",
+                "style": "BORDER"
+            }
+        },
+        "diff.conflict.withBorder": {
+            "bgColor": "3F222C",
+            "layer": -68,
+            "fullLine": true,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "732936",
+                "style": "BORDER"
+            }
+        },
+        "problem.error": {
+            "stripeColor": "DD3962",
+            "layer": 70,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "DD3962",
+                "style": "WAVY"
+            }
+        },
+        "problem.error.badCharacter": {
+            "stripeColor": "DD3962",
+            "layer": 100,
+            "fullLine": false,
+            "showEmptyIntervals": true,
+            "decoration": {
+                "color": "DD3962",
+                "style": "WAVY"
+            }
+        },
+        "problem.warning": {
+            "bgColor": "403618",
+            "stripeColor": "BF8915",
+            "layer": 60,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "problem.warning.weak": {
+            "stripeColor": "756D56",
+            "layer": 40,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "B39500",
+                "style": "WAVY"
+            }
+        },
+        "problem.deprecated": {
+            "layer": 30,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "C3C3C3",
+                "style": "SOLID",
+                "position": "THROUGH",
+                "thickness": 1.0
+            }
+        },
+        "problem.info": {
+            "stripeColor": "756D56",
+            "layer": 50,
+            "fullLine": false,
+            "showEmptyIntervals": false,
+            "decoration": {
+                "color": "B39500",
+                "style": "BORDER"
+            }
+        },
+        "problem.unknown": {
+            "fgColor": "F23F6C",
+            "stripeColor": "DD3962",
+            "layer": 50,
+            "fullLine": false,
+            "showEmptyIntervals": false
+        },
+        "problem.unused": {
+            "fgColor": "8C8C8C",
+            "layer": 60,
+            "decoration": {
+                "color": "999999",
+                "style": "WAVY"
+            }
+        },
+        "transparent": {
+        }
+    },
+    "palette": {
+        "White": "FFFFFF",
+        "Grey": "C9C9D1",
+        "Black": "000000",
+        "Blue": "4DACF0",
+        "Green": "62A362",
+        "Orange": "E0957B",
+        "Violet": "93A6F5",
+        "Transparent": "FFFFFF0%"
+    }
+}
