@@ -1,8 +1,6 @@
-// Based on "gradle init"
-
 plugins {
-    // Fleet is built with higher kotlin version than default from "gradle init" - updated to latest
-    kotlin("jvm").version("1.7.20")
+    kotlin("jvm") version "1.7.20"
+    kotlin("plugin.serialization") version "1.7.20"
     application
 }
 
@@ -11,11 +9,8 @@ repositories {
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
-val version = "0.7.9"
+val version = "0.7.36"
 val target = "linux-x64"
-
-// Set this to actual location of Fleet. YMMV
-val fleetInstallDir = "${System.getProperty("user.home")}/.local/share/JetBrains/Toolbox/apps/Fleet/ch-0/1.10.192"
 
 java {
     toolchain {
@@ -23,20 +18,18 @@ java {
     }
 }
 
-
 dependencies {
-    // This is added manually, hopefully it will override any skikio in fleet-folder
+    implementation("org.jetbrains.skiko:skiko:$version")
+    implementation("org.jetbrains.skiko:skiko-awt:$version")
     implementation("org.jetbrains.skiko:skiko-awt-runtime-$target:$version")
 
-    // From "gradle init"
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("com.google.guava:guava:31.0.1-jre")
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.5")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.3.3")
+    implementation("it.unimi.dsi:fastutil:8.2.1")
 
-    implementation(fileTree(fleetInstallDir) {
-        include("**/*.jar")
+    implementation(fileTree("lib") {
+        include("*.jar")
     })
 }
 
@@ -47,25 +40,9 @@ application {
         "--add-exports", "java.desktop/sun.java2d=ALL-UNNAMED",
         "--add-exports", "java.desktop/sun.awt=ALL-UNNAMED",
         "--add-opens", "java.desktop/sun.awt.X11=ALL-UNNAMED",
-        "-Dkotlinx.coroutines.debug.enable.creation.stack.trace=false",
-        "-ea",
-        "-Dnoria.render.mode=skiko",
-        "-Dskiko.collect.stat=true",
-        "-Dsun.java2d.uiScale.enabled=true",
-        "-Dsun.awt.windows.useCommonItemDialog=true",
     )
     mainClass.set("fleetui.AppKt")
 }
 
 // Fleet is built with 17, must be the same
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> { kotlinOptions.jvmTarget = "17" }
-
-// Lots of duplicate jar-files in fleet folder
-// Filtering out duplicates instead of picking the actually required jar-files. Long live lazyness
-gradle.taskGraph.whenReady {
-    allTasks
-        .filter { it.hasProperty("duplicatesStrategy") }
-        .forEach {
-            it.setProperty("duplicatesStrategy", "EXCLUDE")
-        }
-}
