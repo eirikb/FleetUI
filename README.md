@@ -1,6 +1,7 @@
 [![Build](https://github.com/eirikb/FleetUI/actions/workflows/build.yml/badge.svg)](https://github.com/eirikb/FleetUI/actions/workflows/build.yml)
 
 # FleetUI Demo
+
 ![image](https://user-images.githubusercontent.com/241706/201476692-be4520c9-9cb9-45fa-b556-d2e3fc6de2bb.png)  
 ![image](https://user-images.githubusercontent.com/241706/201476698-9276d762-0fad-49d5-91ac-c9be41792446.png)
 
@@ -50,6 +51,3 @@ Not JetPack Compose, not JetBrains Compose
 **Q**: Does this work on all platforms?  
 **A**: Haven't tried, but don't think so, Kotlin multiplatform would require source code which is not yet available for
 Noria
-
-**Q**: Where are the gallery example code?  
-**A**: I have them, but haven't asked if I can share them yet
