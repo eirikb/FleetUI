@@ -45,7 +45,7 @@ class FileResourceReader(private val path: String) : ResourceReader {
 }
 
 fun NoriaContext.mainWindow() {
-    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("../light.json")))
+    val theme = FleetTheme(ThemeId("light"), ThemeLoader.fromPath(Path.of("light.json")))
     val dndRootState: StateCell<DnDRoot> = state { DnDRoot.Idle }
     val actionManager = DefaultActionManager()
     val portalNetwork = remember { MutableOpenMap.empty<PortalNetwork>() }
@@ -55,7 +55,7 @@ fun NoriaContext.mainWindow() {
         set(ActionManagerKey, actionManager)
         set(DnDKey, dndRootState)
         set(PortalNetworkKey, portalNetwork)
-        set(ResourceReaderKey, FileResourceReader("../icons"))
+        set(ResourceReaderKey, FileResourceReader("icons"))
     }) {
         window(
             title = "Gallery",
