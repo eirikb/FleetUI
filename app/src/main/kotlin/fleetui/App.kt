@@ -68,9 +68,7 @@ fun NoriaContext.mainWindow() {
                 }
             }
 
-            vbox {
-                galleryView(noriaExamples())
-            }
+            galleryView(noriaExamples())
         }
     }
 }
