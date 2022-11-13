@@ -1,6 +1,12 @@
 [![Build](https://github.com/eirikb/FleetUI/actions/workflows/build.yml/badge.svg)](https://github.com/eirikb/FleetUI/actions/workflows/build.yml)
 
-# FleetUI Demo
+# FleetUI
+
+```kotlin
+vbox {
+    uiText("Hello, world!")
+}
+```
 
 ![image](https://user-images.githubusercontent.com/241706/201476692-be4520c9-9cb9-45fa-b556-d2e3fc6de2bb.png)  
 ![image](https://user-images.githubusercontent.com/241706/201476698-9276d762-0fad-49d5-91ac-c9be41792446.png)
@@ -28,6 +34,11 @@ Run:
 
 This will run the gallery app, with example components.
 
+## Examples
+
+All the gallery examples are located
+at [app/src/main/resources/examples](https://github.com/eirikb/FleetUI/tree/main/app/src/main/resources/examples)
+
 ## Thanks to JetBrains
 
 This would not have been possible without a ton of help from Manuel Unterhofer and Sergey Ignatov at JetBrains.  
@@ -49,5 +60,4 @@ Not JetPack Compose, not JetBrains Compose
 **A**: At the moment, Discouraged
 
 **Q**: Does this work on all platforms?  
-**A**: Haven't tried, but don't think so, Kotlin multiplatform would require source code which is not yet available for
-Noria
+**A**: Not yet. All JVM desktop platforms should work (Windows, Linux ,MacOS)

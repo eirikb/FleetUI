@@ -32,7 +32,6 @@ import org.jetbrains.skia.FontMgr
 import org.jetbrains.skia.paragraph.FontCollection
 import org.jetbrains.skia.paragraph.TypefaceFontProvider
 import java.io.FileInputStream
-import java.io.InputStream
 import java.nio.file.Path
 
 fun registerFonts() {
@@ -69,10 +68,7 @@ fun NoriaContext.mainWindow() {
                 }
             }
 
-            vbox {
-                gap(height = windowHeaderHeight)
-                galleryView(noriaExamples())
-            }
+            galleryView(noriaExamples())
         }
     }
 }
@@ -99,13 +95,11 @@ fun main() {
     }
 
     eventLoop(windowManager, eventHandlerRegistry::runHandlers, Dispatchers.Default + eventHandlerRegistry) {
-        withRenderLoop(
-            root = {
-                mainWindow()
-            },
-            bindings = OpenMap {
-                set(ActionManagerKey, actionManager)
-            }) {
+        withRenderLoop(root = {
+            mainWindow()
+        }, bindings = OpenMap {
+            set(ActionManagerKey, actionManager)
+        }) {
             awaitCancellation()
         }
     }
