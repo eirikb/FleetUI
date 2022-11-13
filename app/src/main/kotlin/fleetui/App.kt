@@ -69,7 +69,6 @@ fun NoriaContext.mainWindow() {
             }
 
             vbox {
-                gap(height = windowHeaderHeight)
                 galleryView(noriaExamples())
             }
         }
