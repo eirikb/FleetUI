@@ -34,6 +34,8 @@ Run:
 
 This will run the gallery app, with example components.
 
+Requires JDK 17, preferable [JBR 17](https://github.com/JetBrains/JetBrainsRuntime/releases).
+
 ## Examples
 
 All the gallery examples are located
@@ -57,7 +59,7 @@ Not JetPack Compose, not JetBrains Compose
 **A**: Yes
 
 **Q**: Can this be used in production?  
-**A**: At the moment, Discouraged
+**A**: At the moment; discouraged
 
 **Q**: Does this work on all platforms?  
-**A**: Not yet. All JVM desktop platforms should work (Windows, Linux ,MacOS)
+**A**: Not yet. All JVM desktop platforms should work (Windows, Linux, MacOS)
