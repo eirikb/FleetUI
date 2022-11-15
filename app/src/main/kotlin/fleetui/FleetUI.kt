@@ -2,6 +2,8 @@ package fleetui
 
 import fleet.frontend.editor.actions.type
 import fleet.dock.api.ThemeId
+import fleet.frontend.editor.actions.DeleteDirection
+import fleet.frontend.editor.actions.delete
 import fleet.themes.FleetTheme
 import fleet.themes.ThemeLoader
 import fleet.themes.loadNoriaTheme
@@ -67,15 +69,21 @@ fun NoriaContext.mainWindow(title: String, initialSize: Size, builder: UIContext
                     defaultPresentation = ActionPresentation("Typing"),
                     presenter = { actionContext ->
                         val typedText = actionContext[CommonDataKeys.TypedText]!!
-                        if (typedText.all { it.isAcceptable }) {
+                        if (typedText.all { it.isAcceptable || it == '\b' }) {
                             ActionPresentation("Typing")
                         } else null
                     },
                     perform = { actionContext ->
                         val editorModel = actionContext[CommonDataKeys.EditorModel]!!
                         val typedText = actionContext[CommonDataKeys.TypedText]!!
-                        editorModel.mutate {
-                            type(typedText, withSmartHandlers = false)
+                        if (typedText[0] == '\b') {
+                            editorModel.mutate {
+                                delete(DeleteDirection.BACKWARD)
+                            }
+                        } else {
+                            editorModel.mutate {
+                                type(typedText, withSmartHandlers = false)
+                            }
                         }
                         Propagate.STOP
                     },
