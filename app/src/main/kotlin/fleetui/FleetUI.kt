@@ -1,5 +1,6 @@
 package fleetui
 
+import fleet.frontend.editor.actions.type
 import fleet.dock.api.ThemeId
 import fleet.themes.FleetTheme
 import fleet.themes.ThemeLoader
@@ -14,6 +15,7 @@ import noria.model.dimensions.Size
 import noria.model.dimensions.px
 import noria.ui.ResourceReader
 import noria.ui.components.*
+import noria.ui.components.editor.isAcceptable
 import noria.ui.core.*
 import noria.ui.events.inputHandler
 import noria.ui.events.performActionFromKeyboard
@@ -60,6 +62,27 @@ fun NoriaContext.mainWindow(title: String, initialSize: Size, builder: UIContext
             initialPosition = null,
             initialScreenId = null,
         ) {
+            contextActions(
+                Action.contextAction(
+                    defaultPresentation = ActionPresentation("Typing"),
+                    presenter = { actionContext ->
+                        val typedText = actionContext[CommonDataKeys.TypedText]!!
+                        if (typedText.all { it.isAcceptable }) {
+                            ActionPresentation("Typing")
+                        } else null
+                    },
+                    perform = { actionContext ->
+                        val editorModel = actionContext[CommonDataKeys.EditorModel]!!
+                        val typedText = actionContext[CommonDataKeys.TypedText]!!
+                        editorModel.mutate {
+                            type(typedText, withSmartHandlers = false)
+                        }
+                        Propagate.STOP
+                    },
+                    requirements = setOf(CommonDataKeys.EditorModel, CommonDataKeys.TypedText),
+                    triggers = setOf(CommonTriggers.Typing)
+                )
+            )
             focusData {
                 inputHandler { event ->
                     performActionFromKeyboard(actionManager, focusNode.actionContext(), event)
