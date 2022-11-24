@@ -19,7 +19,7 @@ This is a stand-alone demo of the UI used in [Fleet](https://www.jetbrains.com/f
 Fleet has its own UI, called Noria. Contrary to what some might think it does not use Compose.  
 JetBrains made Noria because Compose was not available at the time when Fleet was created.  
 Noria is similar to Compose, and uses [Skiko](https://github.com/JetBrains/skiko) as a binding to Skia.  
-In theory it can build to Windows, Linux, MacOS, Android, iOS and web.
+In theory it can build to Windows, Linux, macOS, Android, iOS and web.
 
 This project tries to use Noria outside of Fleet.  
 Making it possible for devs to make a full GUI, like Compose or Flutter.
